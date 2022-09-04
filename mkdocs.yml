@@ -31,17 +31,24 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
 
 nav:
   - Home: index.md
   - Installation:
-    - installation/development.md
+    - installation/sandbox.md
     - Production:
       - installation/production/prerequisites.md
       - installation/production/external-resources.md
       - installation/production/configuration.md
       - installation/production/deployment.md
       - installation/production/post-installation.md
+  - Architecture:
+    - architecture/overview.md
+    - architecture/bare-metal-provisioning.md
+    - architecture/secrets-management.md
+    - architecture/networking.md
   - Tutorials:
     - tutorials/manual-dns-setup.md
     - tutorials/create-a-new-user-account.md
@@ -53,14 +60,16 @@ nav:
   - Runbooks:
     - runbooks/argocd.md
     - runbooks/cert-manager.md
+    - runbooks/dnsmasq.md
+    - runbooks/documentation.md
     - runbooks/gitea.md
     - runbooks/longhorn.md
+    - runbooks/tools-container.md
     - runbooks/vault.md
   - troubleshooting.md
   - User guide:
     - user-guide/onboarding.md
   - Reference:
-    - reference/architecture.md
     - reference/license.md
     - reference/changelog.md
     - reference/roadmap.md
